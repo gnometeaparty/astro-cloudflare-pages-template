@@ -7,8 +7,8 @@ This is a template for Astro Cloudflare Pages.
 1. Rename the files in the project to the name of your app.
 
    ```bash
-   pnpx replace-in-file "astro-cloudflare-pages-template/g" "MY_APP" "./**/*.*" --verbose
-   pnpx replace-in-file "astro-cloudflare-pages-template.gtp.dev/g" "MY_DOMAIN" "./**/*.*" --verbose
+   pnpx replace-in-file "astro-cloudflare-pages-template" "MY_APP" "./**/*.*" --verbose
+   pnpx replace-in-file "astro-cloudflare-pages-template.gtp.dev" "MY_DOMAIN" "./**/*.*" --verbose
    ```
 
 2. Add the required environment variables to the `.env` file (see `.env.example` for reference).
