@@ -1,8 +1,13 @@
 {
   "name": "astro-cloudflare-pages-template",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gnometeaparty/astro-cloudflare-pages-template.git"
+  },
+  "homepage": "https://github.com/gnometeaparty/astro-cloudflare-pages-template#readme",
   "scripts": {
     "install:hooks": "lefthook install",
     "commit": "commit",
@@ -22,6 +27,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "clean": "rimraf node_modules dist .turbo .astro",
+    "ci:version": "changeset version && pnpm format:fix",
+    "ci:publish": "changeset tag",
     "pre-commit-tasks": "turbo format:check lint:check type-check build",
     "ci:smoke-test": "turbo format:check lint:check type-check"
   },
@@ -41,6 +48,7 @@
     "zod": "^3.24.1"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.27.11",
     "@cloudflare/workers-types": "^4.20241224.0",
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
